@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>apriltag_ros</name>
+  <name>h6x_apriltag_ros2</name>
   <version>3.1.2</version>
   <description>AprilTag detection node</description>
-  <maintainer email="Rauch.Christian@gmx.de">Christian Rauch</maintainer>
+  <maintainer email="veloute.de.jonquille@gmail.com">ynyBonfennil</maintainer>
   <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

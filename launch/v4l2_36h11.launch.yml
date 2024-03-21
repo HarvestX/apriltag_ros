@@ -31,7 +31,7 @@ launch:
       - name: use_intra_process_comms
         value: "True"
 
-    - pkg: apriltag_ros
+    - pkg: h6x_apriltag_ros2
       plugin: AprilTagNode
       name: apriltag
       namespace: apriltag
@@ -41,7 +41,7 @@ launch:
       - from: /apriltag/camera_info
         to: /v4l2/camera_info
       param:
-      - from: $(find-pkg-share apriltag_ros)/cfg/tags_36h11.yaml
+      - from: $(find-pkg-share h6x_apriltag_ros2)/cfg/tags_36h11.yaml
       extra_arg:
       - name: use_intra_process_comms
         value: "True"
