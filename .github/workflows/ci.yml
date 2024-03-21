@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    name: apriltag_ros
+    name: h6x_apriltag_ros2
     runs-on: ubuntu-latest
 
     container:
@@ -17,6 +17,6 @@ jobs:
 
     - uses: ros-tooling/action-ros-ci@v0.3
       with:
-        package-name: apriltag_ros
+        package-name: h6x_apriltag_ros2
         target-ros2-distro: humble
         vcs-repo-file-url: .github/deps.repos
