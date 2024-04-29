@@ -103,7 +103,7 @@ AprilTagNode::AprilTagNode(const rclcpp::NodeOptions& options)
         this->get_node_topics_interface()->resolve_topic_name("image_rect"),
         std::bind(&AprilTagNode::onCamera, this, std::placeholders::_1, std::placeholders::_2),
         declare_parameter("image_transport", "raw", descr({}, true)),
-        rclcpp::QoS(1).reliable().durability_volatile())),
+        rmw_qos_profile_default)),
     pub_detections(create_publisher<apriltag_msgs::msg::AprilTagDetectionArray>(
         "detections", rclcpp::QoS(1).reliable().durability_volatile())),
     tf_broadcaster(this)
