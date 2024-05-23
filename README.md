@@ -85,3 +85,9 @@ This `AprilTagNode` component can be loaded with other nodes into a "container n
 ```sh
 ros2 launch h6x_apriltag_ros2 v4l2_36h11.launch.yml
 ```
+
+## Apriltag Base Pose
+
+AprilTag's base pose (no translation or rotation) is Y-up, Z-forward, X-left.
+
+![apriltag_base_pose](./apriltag_base_pose.png)
